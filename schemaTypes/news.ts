@@ -38,7 +38,10 @@ export default defineType({
     defineField({
       name: 'tags',
       type: 'array',
-      of: [{type: 'string'}],
+      description: 'Uppercase only',
+      of: [
+        {type: 'string', validation: (Rule) => Rule.uppercase().error('Tags must be uppercase')},
+      ],
     }),
     defineField({
       name: 'cat',
