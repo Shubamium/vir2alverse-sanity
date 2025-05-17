@@ -99,8 +99,15 @@ export default defineType({
       },
       fields: [
         defineField({
+          name: 'ta',
+          title: 'Talent Animation (1:1) ',
+          description: 'Transparent Webp',
+          type: 'file',
+        }),
+        defineField({
           name: 'fb',
           title: 'Full Body (1:1)',
+          description: ' Fallback for Talent Animation',
           type: 'image',
         }),
         defineField({
@@ -118,11 +125,11 @@ export default defineType({
           title: 'Logo (1:1)',
           type: 'image',
         }),
-        defineField({
-          name: 'vid',
-          title: 'Transparent/Black BG Full Body Video',
-          type: 'file',
-        }),
+        // defineField({
+        //   name: 'vid',
+        //   title: 'Transparent/Black BG Full Body Video',
+        //   type: 'file',
+        // }),
       ],
     }),
   ],
