@@ -40,5 +40,11 @@ export default defineType({
         },
       ],
     }),
+
+    defineField({
+      name: 'pw',
+      title: 'Passwording?',
+      type: 'boolean',
+    }),
   ],
 })
