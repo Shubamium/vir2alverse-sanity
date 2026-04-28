@@ -40,7 +40,38 @@ export default defineType({
         },
       ],
     }),
-
+    defineField({
+      name: 'staff',
+      title: 'Staff List (About Page)',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            defineField({
+              name: 'n',
+              title: 'Name',
+              type: 'string',
+            }),
+            defineField({
+              name: 'r',
+              title: 'Role',
+              type: 'string',
+            }),
+            defineField({
+              name: 'd',
+              title: 'Description',
+              type: 'text',
+            }),
+            defineField({
+              name: 'pfp',
+              title: 'Image',
+              type: 'image',
+            }),
+          ],
+        },
+      ],
+    }),
     defineField({
       name: 'pw',
       title: 'Passwording?',
